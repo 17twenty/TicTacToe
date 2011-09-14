@@ -9,8 +9,15 @@ experience and I tried to touch on a few things I've not played with before.
 
 Patches welcome, it'd be nice to work on something else - Vala is a joy!
 
+I've not added a waf/makefile script etc as I've seen a lot of ways to do it
+and, as it was fairly simple, I figured a better understanding could be gained
+from just leaving the code as is with instructions.
+
 To build:
 
 <code>
 valac --pkg gtk+-3.0 -o TicTacToe TicTacToeBox.vala TicTacToeBoard.vala TicTacToeWindow.vala
 </code>
+
+If there is an agreed build method or standard, point me in the right direction
+or patch it in for me.
