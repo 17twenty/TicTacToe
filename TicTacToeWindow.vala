@@ -23,18 +23,18 @@
 
 using Gtk;
 
-public class TicTacToeWindow : Window {
+public class TicTacToeWindow : Gtk.Window {
 
     TicTacToeWindow () {
         set_title ("Tic-Tac-Toe");
         
         // File menu
-        var menuBar = new MenuBar();
-        var file_launcher = new MenuItem.with_mnemonic ("_File");
-        var fileMenu = new Menu();
+        var menuBar = new Gtk.MenuBar();
+        var file_launcher = new Gtk.MenuItem.with_mnemonic ("_File");
+        var fileMenu = new Gtk.Menu();
         file_launcher.set_submenu(fileMenu);
         menuBar.add(file_launcher);
-        var quit = new MenuItem.with_label ("Quit");
+        var quit = new Gtk.MenuItem.with_label ("Quit");
         quit.activate.connect (Gtk.main_quit);
         fileMenu.add(quit);
         
